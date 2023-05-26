@@ -1,0 +1,59 @@
+<script>
+let user = {
+    name = "Джон",
+    age:30
+};
+user.sayHI = function{
+    alert("Привет")
+};
+user.sayHI();
+</script>
+
+<script>
+let customer = {
+  name: 'John Smith',
+  age: 35,
+  email: 'johnsmith@gmail.com',
+  address: '123 Main Street',
+  phone: '555-1234'
+};
+
+console.log(customer.name); 
+console.log(customer.email); 
+console.log(customer.phone); 
+</script>
+
+<script>
+function GroupMember(name) {
+  this.name = name;
+}
+
+let member1 = new GroupMember('John');
+let member2 = new GroupMember('Mary');
+let member3 = new GroupMember('Bob');
+let member4 = new GroupMember('Jane');
+
+console.log(member1.name); // John
+console.log(member2.name); // Mary
+console.log(member3.name); // Bob
+console.log(member4.name); // Jane
+
+</script>
+
+<script>
+function Student(name, age, major) {
+  this.name = name;
+  this.age = age;
+  this.major = major;
+
+  this.introduce = function() {
+    console.log('Меня зовут ' + this.name + ', мне ' + this.age + ' лет, и я учусь на специальности ' + this.major + '.');
+  };
+}
+
+let student1 = new Student('John', 20, 'Computer Science');
+let student2 = new Student('Mary', 22, 'Mathematics');
+
+student1.introduce();
+student2.introduce();
+</script>
